@@ -33,10 +33,18 @@ if (week1 > area * 0.8) {
     console.log (' monitored');
 
     } else {
-        console.log ('planted' );
+        console.log ('planted');
     }
 
 
+    if (week2 > area * 0.8) {
+        console.log ( 'pruned');
     
+    } else if (week2 > area * 0.50 && week2 < area * 0.80) {
+        console.log (' monitored');
+    
+        } else {
+            console.log ('planted');
+        }
 
 
