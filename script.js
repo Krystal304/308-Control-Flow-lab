@@ -10,3 +10,23 @@ let space = 0.8;
 
 // const area = PI * radius * radious
 let area = 3.1415 * 5 * 5;
+
+// starting with 20 plants
+let plant = 20;
+
+//  starting area ( plants * 0.8)
+let start = 20 * 0.8; 
+
+// week 1 
+let week1 = 20 * 2 * 0.8
+
+// week 2
+let week2 = 20 * 4 * 0.8
+
+// week 3
+let week3 = 20 * 8 * 0.8
+
+if (week1 > area * 0.8) {
+    console.log ( 'pruned');}
+    
+
