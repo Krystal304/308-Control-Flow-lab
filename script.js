@@ -79,17 +79,49 @@ let exp = week10 / area;
 console.log (exp)
 
 // Part 3 errors in judgement
+// The scientists decided not to listen to your recommendations, and have instead started with 100 plants in the original 5-meter-radius garden.
+// Use try and catch to wrap your work in an error-handling block. If the amount of space required to hold the originally provided number of plants exceeds the amount of space available, throw a new error and log an appropriate message
 
 try {
     if (week1 > area) {
-        console.log (' Stop ');
-    } else {
         throw "Error - I don't know what I'm doing.";
+        
+    } else { // week 1
+        if (week1 > area * 0.8) {
+            console.log ( 'pruned');
+        
+        } else if (week1 > area * 0.50 && week1 < area * 0.80) {
+            console.log (' monitored');
+        
+            } else {
+                console.log ('planted');
+            }
+        
+        // week 2
+            if (week2 > area * 0.8) {
+                console.log ( 'pruned');
+            
+            } else if (week2 > area * 0.50 && week2 < area * 0.80) {
+                console.log (' monitored');
+            
+                } else {
+                    console.log ('planted');
+                }
+        
+        // week 3
+                if (week3 > area * 0.8) {
+                    console.log ( 'pruned');
+                
+                } else if (week3 > area * 0.50 && week3 < area * 0.80) {
+                    console.log (' monitored');
+                
+                    } else {
+                        console.log ('planted');
+                    }
+        
     }
 }catch (err) {
     console.log (err);
 
 
-}finally {
-	console.log(week1);
 }
