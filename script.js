@@ -1,6 +1,6 @@
 
 
-// Part 1
+// Part 1 growing pains
 // const PI = 3.1415
 let pi = 3.1415;
 
@@ -62,7 +62,7 @@ if (week1 > area * 0.8) {
                 console.log ('planted');
             }
 
-// Part 2
+// Part 2 Thinking bigger
 // The conservation area in which the garden is located has multiple other gardens. 
 // Using the logic you have already created, determine:
 // The amount of additional space that would be required if the scientists 
@@ -78,5 +78,18 @@ let week10 = 100 * 0.8 * 2 ** 10;
 let exp = week10 / area;
 console.log (exp)
 
-// Part 3
+// Part 3 errors in judgement
 
+try {
+    if (week1 > area) {
+        console.log (' Stop ');
+    } else {
+        throw "Error - I don't know what I'm doing.";
+    }
+}catch (err) {
+    console.log (err);
+
+
+}finally {
+	console.log(week1);
+}
